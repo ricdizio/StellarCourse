@@ -1,0 +1,29 @@
+Acount List test net:
+
+1)
+
+/***************************************************************************/
+private key: SDW7OVUJQLLP7PCZDLY3RWUHAQBGKCCFBW2ZSYS5A3EG36EF3HQH65UG
+public key: GBIVJ2T4D4CAPYGNG5JKNGHFKMTTG3F6VPA62ICJXX74EY26YIJELGLC
+/***************************************************************************/
+
+2)
+
+/***************************************************************************/
+private key: SADOFPHW3ZUJJ6UOKZCSLXMQL2YYPFQ5MSH32GGZQLU3VVTRENV6KPGC
+public key: GBLSVKFRWZ4WV432D4RGF6Z56UIX2MCNQWDFS7IDSTL5SQGOJESTLKAV
+/***************************************************************************/
+
+Transacciones realizadas:
+
+1) ---> 2)  transferencia de 20 native
+
+/***************************************************************************/
+private key: SAHV5XAZB7RGG7GP5JBNGMMO77GKDDXFRMWY6UEOLGMHYLOG46X6OOWK
+public key: GAV5PDS3HRET766KZ56V2CIKZVEG3O6LQEITMFZJGPZ5PVURZY25PTFZ
+/***************************************************************************/
+
+/***************************************************************************/
+private key: SADS77J3G7RSLL3I6RUQN3CCRSY7LIEVNSQCET6ZBTXPXS34DJKSR6MA
+public key: GBVRYIMAHZ5HHFKLQDO7JQ2PZCGUN4PTDAGLMM7M2O5PDUOLGJ4WOEV4
+/***************************************************************************/
