@@ -7,13 +7,17 @@ StellarSdk.Network.useTestNetwork();
 var server = new StellarSdk.Server('https://horizon-testnet.stellar.org'); 
 
 //LLAVE PRIVADA FUENTE
-var sourceKeys = StellarSdk.Keypair.fromSecret('SAHV5XAZB7RGG7GP5JBNGMMO77GKDDXFRMWY6UEOLGMHYLOG46X6OOWK'); 
+var sourceKeys = StellarSdk.Keypair.fromSecret('SD2ZKZXZNT3SHKFKEZ6MN3VGBGMBGQERO3JEQRGP5QIAPXMZFHB25FN2'); 
 
 // LLAVE PUBLICA DESTINO
-var destinationId = 'GBVRYIMAHZ5HHFKLQDO7JQ2PZCGUN4PTDAGLMM7M2O5PDUOLGJ4WOEV4'; 
+var destinationId = 'GB7DB7ROZFPJ65CWALNUNVWJIW62CKQ2XUBJAPQIGASOEPMNL7T2VAWH'; 
 
 // Transaction will hold a built transaction we can resubmit if the result is unknown. 
 var transaction; 
+
+// Si quiero transferir un asset especifico
+let emisorKey = "GDKQJCVUE2EGJIAMFGVNEUGMNU4H2QU6ZBJCO73JIVRVHWVTN7VL6VFS";
+var bitcoin = new StellarSdk.Asset('BTCx', emisorKey); 
 
 // First, check to make sure that the destination account exists. 
 // You could skip this, but if the account does not exist, you will be charged 
@@ -49,9 +53,10 @@ server.loadAccount(destinationId).catch(StellarSdk.NotFoundError, function (erro
 
             // ASSET A TRANSFERIR
 
-            asset: StellarSdk.Asset.native(),  
+            //asset: StellarSdk.Asset.native(),  
+            asset: bitcoin,
             amount: "20.2161653" 
-        })).addMemo(StellarSdk.Memo.text('Test Transaction')).build(); 
+        })).addMemo(StellarSdk.Memo.text('Bitcoin Transaction')).build(); 
         // A memo allows you to add your own metadata to a transaction. It's 
         // optional and does not affect how Stellar treats the transaction. 
         // Sign the transaction to prove you are actually the person sending it. 
