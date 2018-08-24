@@ -6,13 +6,23 @@ var server = new StellarSdk.Server('https://horizon-testnet.stellar.org');
 
 // Keys for accounts to issue and receive the new asset 
 
+
+
+
+/*********************************************************************************************************** */
+
 var issuingKeys = StellarSdk.Keypair.fromSecret('SAHVFUDUQYXAB6J76MRIVL23U2I53WVKFKVZ7R23BNKZ7AUDDGCHVR7L'); 
 
 var receivingKeys = StellarSdk.Keypair.fromSecret('SD2ZKZXZNT3SHKFKEZ6MN3VGBGMBGQERO3JEQRGP5QIAPXMZFHB25FN2'); 
 
+/*********************************************************************************************************** */
+
+
+
+
 // Create an object to represent the new asset 
 
-var bitcoin = new StellarSdk.Asset('BTCone', issuingKeys.publicKey()); 
+var bitcoin = new StellarSdk.Asset('BTC', issuingKeys.publicKey()); 
 
 // First, the receiving account must trust the asset 
 

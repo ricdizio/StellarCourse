@@ -57,6 +57,18 @@ module.exports.routes = {
 },
 
 /**
+ * Method: Get Verify Acount
+ * INPUTS: 
+ *  Public Key
+ * OUTPUT:
+ *  
+ */
+'GET /api/verify/:publicKey': {
+  controller: 'acount/verify',
+  action: 'index'
+},
+
+/**
  * Method: Get Balance (all assets)
  * INPUTS: 
  *  publicKEY: Required to sign account
