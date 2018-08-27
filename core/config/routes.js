@@ -52,7 +52,7 @@ module.exports.routes = {
  *  
  */
 'GET /api/create': {
-  controller: 'acount/create',
+  controller: 'account/create',
   action: 'index'
 },
 
@@ -64,7 +64,7 @@ module.exports.routes = {
  *  
  */
 'GET /api/verify/:publicKey': {
-  controller: 'acount/verify',
+  controller: 'account/VerifyController',
   action: 'index'
 },
 
@@ -75,7 +75,7 @@ module.exports.routes = {
  *  Asset: Asset to view balance
  */
   'GET /api/account/:publicKey/balance': {
-    controller: 'acount/getBalance',
+    controller: 'account/getBalance',
     action: 'index'
   },
 
@@ -86,7 +86,7 @@ module.exports.routes = {
  *  Asset: Asset to view balace
  */
   'GET /api/account/:publicKey/balance/:asset': {
-    controller: 'acount/getAssetBalance',
+    controller: 'account/getAssetBalance',
     action: 'index'
   },
 
@@ -98,7 +98,7 @@ module.exports.routes = {
  *  publicKEY: Destination 
  */
   'POST /api/auth/send/:asset/:keyToSend': {
-    controller: 'acount/send',
+    controller: 'account/send',
     action: 'index'
   },
 
